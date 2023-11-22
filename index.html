@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "640px",
+                    md: "768px",
+                    lg: "1024px",
+                    xl: "1280px",
+                    "2xl": "1920px",
+                },
+                extend: {},
+                fontFamily: {
+                    poppins: ["Poppins", "sans-serif"],
+                    roboto: ["Roboto", "sans-serif"],
+                    Digital: ["DS-Digital", "sans-serif"],
+                    custom: ["DS-DIGIB", "sans-serif"],
+                },
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="w-screen h-screen overflow-hidden  bg-gray-950 text-white md:text-[1rem] lg:text-[1rem] text-[1rem]  xl:text-[1rem] 2xl:text-[6rem] p-[1rem]">
+    <div class="w-screen h-screen overflow-hidden">
+        <!-- Score -->
+        <div
+            class="container h-[30%] justify-evenly gap-[2rem] mx-auto  text-white   rounded-xl text-center flex flex-col   xl:text-[1rem] 2xl:text-[6rem]">
+            <div class="flex w-[80%] items-end justify-around h-full mx-auto">
+                <!-- Team -->
+                <div class="flex items-center justify-between flex-col gap-[3rem]  w-1/3">
+                    <img src="/path/to/your/image.jpg" width="250" height="200" alt="img flag"
+                        class="border border-gray-700 rounded p-1 bg-gray-900 shadow-md" />
+                    <div
+                        class="font-semibold font-poppins md:text-xl 2xl:text-[6rem] md:text-[1rem] lg:text-[1rem] text-[1rem]   xl:text-[1rem] w-max ">
+                        team A
+                    </div>
+                </div>
+                <!-- Score Total & Time -->
+                <div class="flex items-center flex-col justify-end  mx-auto 2xl:text-[8rem] h-full w-1/3 gap-[2rem]">
+                    <div class="font-roboto font-bold w-full">
+                        <div class="flex items-center justify-center text-xl 2xl:text-[15rem] text-yellow-400">
+                            123:64
+                        </div>
+                    </div>
+                    <div class="text-green-400 2xl:text-[8rem] font-custom font-bold mb-[-6rem]">
+                        12:44
+                    </div>
+                </div>
+                <!-- Team -->
+                <div class="flex items-center justify-between flex-col gap-[3rem]  w-1/3">
+                    <img src="/path/to/your/image.jpg" width="250" height="200" alt="img flag"
+                        class="border border-gray-700 rounded p-1 bg-gray-900 shadow-md" />
+                    <div
+                        class="font-semibold font-poppins md:text-xl 2xl:text-[6rem] md:text-[1rem] lg:text-[1rem] text-[1rem]   xl:text-[1rem] w-max ">
+                        team A
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Details -->
+        <div
+            class="container h-[58%] mx-auto 2xl:text-[6rem] text-white text-center flex flex-col items-center justify-evenly gap-0">
+            <!-- Subpoints -->
+            <div class="flex items-center justify-between w-[68%] my-[-6rem]">
+                <h2
+                    class="md:text-[1rem] lg:text-[1rem] text-[1rem]  xl:text-[1rem] 2xl:text-[10rem] text-yellow-500 font-bold font-roboto">
+                    12</h2>
+
+                <h2
+                    class="font-roboto tracking-wider  md:text-[1rem] lg:text-[1rem] text-[1rem]   xl:text-[1rem] 2xl:text-[8rem] font-bold uppercase">
+                    Try</h2>
+
+                <h2
+                    class="md:text-[1rem] lg:text-[1rem] text-[1rem]  xl:text-[1rem] 2xl:text-[10rem] text-yellow-500 font-bold font-roboto">
+                    45
+                </h2>
+            </div>
+
+
+            <!-- Subpoints -->
+            <div class="flex items-center justify-between w-[68%] my-[-6rem]">
+                <h2
+                    class="md:text-[1rem] lg:text-[1rem] text-[1rem]  xl:text-[1rem] 2xl:text-[10rem] text-yellow-500 font-bold font-roboto">
+                    12</h2>
+
+                <h2
+                    class="font-roboto tracking-wider  md:text-[1rem] lg:text-[1rem] text-[1rem]   xl:text-[1rem] 2xl:text-[8rem] font-bold uppercase">
+                    Try</h2>
+
+                <h2
+                    class="md:text-[1rem] lg:text-[1rem] text-[1rem]  xl:text-[1rem] 2xl:text-[10rem] text-yellow-500 font-bold font-roboto">
+                    45
+                </h2>
+            </div>
+
+
+            <!-- Subpoints -->
+            <div class="flex items-center justify-between w-[68%] my-[-6rem]">
+                <h2
+                    class="md:text-[1rem] lg:text-[1rem] text-[1rem]  xl:text-[1rem] 2xl:text-[10rem] text-yellow-500 font-bold font-roboto">
+                    12</h2>
+
+                <h2
+                    class="font-roboto tracking-wider  md:text-[1rem] lg:text-[1rem] text-[1rem]   xl:text-[1rem] 2xl:text-[8rem] font-bold uppercase">
+                    Try</h2>
+
+                <h2
+                    class="md:text-[1rem] lg:text-[1rem] text-[1rem]  xl:text-[1rem] 2xl:text-[10rem] text-yellow-500 font-bold font-roboto">
+                    45
+                </h2>
+            </div>
+
+
+            <!-- Subpoints -->
+            <div class="flex items-center justify-between w-[68%] my-[-6rem]">
+                <h2
+                    class="md:text-[1rem] lg:text-[1rem] text-[1rem]  xl:text-[1rem] 2xl:text-[10rem] text-yellow-500 font-bold font-roboto">
+                    12</h2>
+
+                <h2
+                    class="font-roboto tracking-wider  md:text-[1rem] lg:text-[1rem] text-[1rem]   xl:text-[1rem] 2xl:text-[8rem] font-bold uppercase">
+                    Try</h2>
+
+                <h2
+                    class="md:text-[1rem] lg:text-[1rem] text-[1rem]  xl:text-[1rem] 2xl:text-[10rem] text-yellow-500 font-bold font-roboto">
+                    45
+                </h2>
+            </div>
+        </div>
+        <!-- Banner -->
+        <div class="container mx-auto h-[10%] flex overflow-hidden justify-between items-center">
+            <img src="/path/to/your/image.jpg" width="1000" height="1000" alt="img flag"
+                class="object-contain" />
+            <img src="/path/to/your/image.jpg" width="1000" height="1000" alt="img flag"
+                class="object-contain " />
+            <img src="/path/to/your/image.jpg" width="1000" height="1000" alt="img flag"
+                class="object-contain" />
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
