@@ -138,17 +138,40 @@
             </div>
         </div>
         <!-- Banner -->
-        <div class="container mx-auto h-[10%] flex overflow-hidden justify-between items-center">
-            <img src="/path/to/your/image.jpg" width="1000" height="1000" alt="img flag"
-                class="object-contain" />
-            <img src="/path/to/your/image.jpg" width="1000" height="1000" alt="img flag"
-                class="object-contain " />
-            <img src="/path/to/your/image.jpg" width="1000" height="1000" alt="img flag"
-                class="object-contain" />
-            
+        <div id="gallery-container"
+            class="container mx-auto h-[10%] flex overflow-hidden justify-between items-center wrapper gallery-container">
+            <img src="./img.avif" width="1000" height="1000" alt="img flag" class="object-contain w-full h-full" />
+            <img src="./img.avif" width="1000" height="1000" alt="img flag" class="object-contain w-full h-full" />
+            <img src="./img.avif" width="1000" height="1000" alt="img flag" class="object-contain w-full h-full" />
+            <img src="./img.avif" width="1000" height="1000" alt="img flag" class="object-contain w-full h-full" />
+            <img src="./img.avif" width="1000" height="1000" alt="img flag" class="object-contain w-full h-full" />
+            <img src="./img.avif" width="1000" height="1000" alt="img flag" class="object-contain w-full h-full" />
         </div>
+        </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const galleryContainer = document.getElementById("gallery-container");
+                const images = galleryContainer.getElementsByTagName("img");
+                const imageCount = images.length;
 
-    </div>
+                if (imageCount > 0) {
+                    let columns;
+
+                    if (imageCount >= 12) {
+                        columns = 6;
+                    } else if (imageCount >= 6) {
+                        columns = 3;
+                    } else if (imageCount >= 3) {
+                        columns = 2;
+                    } else {
+                        columns = 1;
+                    }
+
+                    galleryContainer.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+                }
+            });
+                </script>
 </body>
 
 </html>
